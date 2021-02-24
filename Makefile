@@ -9,6 +9,8 @@ LINK_FLAGS := -Wall -pedantic --std=c++17
 	PART2_EXE_PATH := ./$(PART2_EXE_NAME)
 	PART3_EXE_NAME := lab4-caster
 	PART3_EXE_PATH := ./$(PART3_EXE_NAME)
+	PART4_EXE_NAME := lab4-over-under
+	PART4_EXE_PATH := ./$(PART4_EXE_NAME)
 
 # Declaring my targets
 lol-haxx:	my-program
@@ -43,5 +45,14 @@ my-caster:	$(PART3_EXE_PATH)
 $(PART3_EXE_PATH):
 	@echo Building $@
 	$(CC) $(LINK_FLAGS) caster.cpp -o $@ \
+		&& chmod +x $@
+
+# over_under_flow.cpp
+my-over-under:	$(PART4_EXE_PATH)
+	$(PART4_EXE_PATH)
+# Linking over_under_flow.cpp
+$(PART4_EXE_PATH):
+	@echo Building $@
+	$(CC) $(LINK_FLAGS) over_under_flow.cpp -o $@ \
 		&& chmod +x $@
 
