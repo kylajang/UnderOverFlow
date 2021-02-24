@@ -25,3 +25,9 @@ Yes, my program ran this time because we set the lol-haxx target to be dependent
 	* The program outputted the capital letter A.
 	* It didn't output the number 65 because when we assigned our variable to 65, the character that's assigned to the number 65 is A.
 	* Static casting allowed the integer variable to appear as type char.
+	
+# Overflow and Underflow
+	* I think what is happening here is that when I subtract 1 from my intial value of 0 and get a large number as a result, this number is actually my maximum value due to underflow. Therefore when I add 1 back to my unsigned integer, it reverts back the initial value of 0 because of overflow.
+
+
+
