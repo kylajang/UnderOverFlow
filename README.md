@@ -29,5 +29,7 @@ Yes, my program ran this time because we set the lol-haxx target to be dependent
 # Overflow and Underflow
 	* I think what is happening here is that when I subtract 1 from my intial value of 0 and get a large number as a result, this number is actually my maximum value due to underflow. Therefore when I add 1 back to my unsigned integer, it reverts back the initial value of 0 because of overflow.
 
-
-
+# Named Constants
+	* My program did not compile because I set a constant integer to 0 but then tried setting it to a different number later on.
+	* The meaning of the compiler's message is trying to tell me that a constant cannot be changed once I initially set it to something.
+	* My compiler says my error happens at line 12 column 5.
