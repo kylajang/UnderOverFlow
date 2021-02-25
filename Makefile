@@ -66,3 +66,7 @@ $(PART5_EXE_PATH):
 	@echo Building $@
 	$(CC) $(LINk_FLAGS) constants.cpp -o $@ /
 		&& chmod +x $@
+
+# Making the all target to call on multiple targets
+all:	my-program	my-pauser	my-caster	my-over-under
+
